@@ -1,0 +1,16 @@
+class Solution {
+    public String solution(String s) {
+        String answer = "";
+        int len = s.length();
+        
+        if (len % 2 == 1) {
+            // odd number
+            answer = s.substring(len / 2, len / 2 + 1);
+        }
+        else {
+            // even number
+            answer = s.substring(len / 2 - 1, len / 2 + 1);
+        }
+        return answer;
+    }
+}
